@@ -12,7 +12,6 @@ public class Fatorial {
         Scanner scanner = new Scanner(System.in);
 
         int numero;
-        int resultado = 1;
 
         System.out.println("Qual número você gostaria de saber o fatorial? ");
         numero = scanner.nextInt();
