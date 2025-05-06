@@ -17,18 +17,15 @@ public class Fatorial {
         System.out.println("Qual número você gostaria de saber o fatorial? ");
         numero = scanner.nextInt();
 
-        long fatorial = calcularFatorial(numero);
-        System.out.println("O fatorial de " + numero + " é: " + fatorial);
-
-    }
-
-    public static long calcularFatorial(int numero) {
-        long fatorial = 1;
-
-        for (int i = 1; i <= numero; i++) {
-            fatorial *= i;
-        }
-        return fatorial;
+        if(numero <= 0){
+            System.out.println("o numero deve ser maior que zero!");
+        } else {
+            long fatorial = 1;
+            for(int i = 1; i <= numero; i++){
+                fatorial = fatorial * i;
+            }
+            System.out.println("o fatorial de "+numero+ " é: "+fatorial);
+        } scanner.close();
     }
 }
 
